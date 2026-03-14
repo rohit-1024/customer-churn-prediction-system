@@ -152,12 +152,12 @@ print(df.columns)
 # 11. Save cleaned Dataset
 # ==========================================================
 
-OUTPUT_PATH = "data/transformed_data/cleaned_data.csv"
+OUTPUT_DATA_PATH = "data/transformed_data/cleaned_data.csv"
 
-df.to_csv(OUTPUT_PATH, index=False)
+df.to_csv(OUTPUT_DATA_PATH, index=False)
 
 print("\nPreprocessed / cleaned dataset saved successfully.")
-print(f"Saved at: {OUTPUT_PATH}\n")
+print(f"Saved at: {OUTPUT_DATA_PATH}\n")
 
 
 ################################################################################
