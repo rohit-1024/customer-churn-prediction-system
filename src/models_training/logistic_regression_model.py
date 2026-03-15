@@ -99,7 +99,7 @@ def train_logistic_regression():
     # Initialize Model
     # ------------------------------------------------------
 
-    model = LogisticRegression(max_iter=1000)
+    model = LogisticRegression(max_iter=2000)
 
     print("\nFitting Logistic Regression model...")
 
