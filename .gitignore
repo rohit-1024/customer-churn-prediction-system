@@ -15,4 +15,4 @@ __pycache__/
 .vscode/
 
 # saved models
-models/
+saved_models/
