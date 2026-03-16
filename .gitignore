@@ -16,3 +16,5 @@ __pycache__/
 
 # saved models
 saved_models/
+
+!streamlit/saved_models/*
