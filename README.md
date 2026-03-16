@@ -1,6 +1,13 @@
 
 # 📊 Customer Churn Prediction System
 
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/ML-Scikit--Learn-orange)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/App-Streamlit-red)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+[![Live App](https://img.shields.io/badge/Live%20App-Streamlit-success?logo=streamlit)](https://customer-churn-prediction-system-by-rohit-raut.streamlit.app/)
+
 Built with **Python, Scikit-learn, Pandas, SHAP, Plotly, and Streamlit**, this project demonstrates the **End-to-end machine learning pipeline:**
 
 **Raw Dataset → EDA → Data Cleaning → Feature Engineering → Train-Test Split → Model Training → Model Evaluation → Model Explainability → Model Deployment (Streamlit App).**
