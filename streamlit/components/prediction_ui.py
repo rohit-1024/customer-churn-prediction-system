@@ -1,30 +1,80 @@
 import streamlit as st
 
 
-def render_sidebar():
+def sidebar_inputs():
 
-    st.sidebar.header("Customer Information")
+    st.sidebar.title("📋 Customer Information")
 
-    gender = st.sidebar.selectbox("Gender", ["Male", "Female"])
+    gender = st.sidebar.selectbox("Gender",["Male","Female"])
 
-    senior_citizen = st.sidebar.selectbox("Senior Citizen", [0, 1])
+    senior_citizen = st.sidebar.selectbox("Senior Citizen",[0,1])
 
-    partner = st.sidebar.selectbox("Partner", ["Yes", "No"])
+    partner = st.sidebar.selectbox("Partner",["Yes","No"])
 
-    dependents = st.sidebar.selectbox("Dependents", ["Yes", "No"])
+    dependents = st.sidebar.selectbox("Dependents",["Yes","No"])
 
-    tenure = st.sidebar.slider("Tenure (Months)", 0, 72, 12)
+    tenure = st.sidebar.slider("Tenure (months)",0,72,12)
 
-    phone_service = st.sidebar.selectbox("Phone Service", ["Yes", "No"])
+    phone_service = st.sidebar.selectbox("Phone Service",["Yes","No"])
+
+    multiple_lines = st.sidebar.selectbox(
+        "Multiple Lines",
+        ["Yes","No","No phone service"]
+    )
 
     internet_service = st.sidebar.selectbox(
         "Internet Service",
-        ["DSL", "Fiber optic", "No"]
+        ["DSL","Fiber optic","No"]
+    )
+
+    online_security = st.sidebar.selectbox(
+        "Online Security",
+        ["Yes","No","No internet service"]
+    )
+
+    online_backup = st.sidebar.selectbox(
+        "Online Backup",
+        ["Yes","No","No internet service"]
+    )
+
+    device_protection = st.sidebar.selectbox(
+        "Device Protection",
+        ["Yes","No","No internet service"]
+    )
+
+    tech_support = st.sidebar.selectbox(
+        "Tech Support",
+        ["Yes","No","No internet service"]
+    )
+
+    streaming_tv = st.sidebar.selectbox(
+        "Streaming TV",
+        ["Yes","No","No internet service"]
+    )
+
+    streaming_movies = st.sidebar.selectbox(
+        "Streaming Movies",
+        ["Yes","No","No internet service"]
     )
 
     contract = st.sidebar.selectbox(
         "Contract",
-        ["Month-to-month", "One year", "Two year"]
+        ["Month-to-month","One year","Two year"]
+    )
+
+    paperless_billing = st.sidebar.selectbox(
+        "Paperless Billing",
+        ["Yes","No"]
+    )
+
+    payment_method = st.sidebar.selectbox(
+        "Payment Method",
+        [
+            "Electronic check",
+            "Mailed check",
+            "Bank transfer (automatic)",
+            "Credit card (automatic)"
+        ]
     )
 
     monthly_charges = st.sidebar.slider(
@@ -42,23 +92,23 @@ def render_sidebar():
     )
 
     return {
-        "gender": gender,
-        "senior_citizen": senior_citizen,
-        "partner": partner,
-        "dependents": dependents,
-        "tenure": tenure,
-        "phone_service": phone_service,
-        "multiple_lines": "No",
-        "internet_service": internet_service,
-        "online_security": "No",
-        "online_backup": "No",
-        "device_protection": "No",
-        "tech_support": "No",
-        "streaming_tv": "No",
-        "streaming_movies": "No",
-        "contract": contract,
-        "paperless_billing": "Yes",
-        "payment_method": "Electronic check",
-        "monthly_charges": monthly_charges,
-        "total_charges": total_charges
+        "gender":gender,
+        "senior_citizen":senior_citizen,
+        "partner":partner,
+        "dependents":dependents,
+        "tenure":tenure,
+        "phone_service":phone_service,
+        "multiple_lines":multiple_lines,
+        "internet_service":internet_service,
+        "online_security":online_security,
+        "online_backup":online_backup,
+        "device_protection":device_protection,
+        "tech_support":tech_support,
+        "streaming_tv":streaming_tv,
+        "streaming_movies":streaming_movies,
+        "contract":contract,
+        "paperless_billing":paperless_billing,
+        "payment_method":payment_method,
+        "monthly_charges":monthly_charges,
+        "total_charges":total_charges
     }
